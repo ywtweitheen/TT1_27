@@ -20,6 +20,9 @@ const MainPage = () => {
 			</container>
 		</div>
 	);
+	function logIn(){
+		
+	}
 };
 
 export default MainPage;
