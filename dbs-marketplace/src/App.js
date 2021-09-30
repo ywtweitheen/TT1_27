@@ -6,7 +6,7 @@ import './App.css';
 
 import MainPage from "./pages";
 import ProductsPage from "./pages/products";
-
+import CartsPage from "./pages/cart";
 
 class App extends Component {
 
