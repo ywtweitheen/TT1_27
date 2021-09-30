@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Products extends Component {
+class Cart extends Component {
 	// step 1 : add constructor
 	constructor(props) {
 		super(props);
@@ -47,4 +47,4 @@ class Products extends Component {
 	}
 }
 
-export default Products;
+export default Cart;
