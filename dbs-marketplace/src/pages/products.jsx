@@ -31,8 +31,25 @@ class Products extends Component {
 			});
 	}
 
-	// addItem = (item) => {
-
+	// addItem = (product) => {
+	// 	const exist = cart.find((x) => x.id === product.id);
+		// 	if (exist) {
+		//   increment qty based on id 
+		// 		)
+		// 	);
+		// 	} else {
+		//     add to cart and qty: 1
+		// 	}
+	// };
+	// remove Item= (product) => {
+	// 	const exist = cart.find((x) => x.id === product.id);
+		// 	if (exist.qty === 1) {
+		//   remove id 
+		// 	} else {
+		// 	setCartItems(
+		// 		decrement qty by -1 
+	// 	);
+	// 	}
 	// };
 
 	render() {
