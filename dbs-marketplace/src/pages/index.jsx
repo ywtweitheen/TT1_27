@@ -17,7 +17,7 @@ const MainPage = () => {
 						<br></br>
 						<button onClick={logIn}>Log In</button>
 						<br></br>
-						<button onClick={reseT}>Reset</button>
+						<input type = "reset" value="Reset"></input>
 					</div>
 				</form>
 			</container>
