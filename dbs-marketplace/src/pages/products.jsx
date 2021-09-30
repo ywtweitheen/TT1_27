@@ -1,6 +1,7 @@
 // all products
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 class Products extends Component {
 	// step 1 : add constructor
@@ -8,19 +9,9 @@ class Products extends Component {
 		super(props);
 		this.state = {
 			//data to be fetched from API
-			items: [
-				{
-					id: 1,
-					title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
-					price: 109.95,
-					description:
-						'Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday',
-					category_id: 3,
-					image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
-					qty: 50
-				}
-			],
-			isLoaded: true
+			items: [],
+			isLoaded: true,
+			cartItems: []
 		};
 	}
 
@@ -36,14 +27,28 @@ class Products extends Component {
 				});
 			});
 	}
+
+	// addItem = (item) => {
+
+	// };
+
 	render() {
 		var { isLoaded, items } = this.state;
 		//check if data can be loaded
 		if (!isLoaded) {
 			return <div>Data is loading...</div>;
 		} else {
-			console.log(items);
-			return <div>Data is loaded</div>;
+			return (
+				<div class="eachItem">
+					{items.map((item) => (
+						<li key={item.id}>
+							<img className="small" src={item.image} />
+							Item: {item.title} | Price: {item.price}
+							<button onClick={() => this.addItem(item)}>Add to Cart</button>
+						</li>
+					))}
+				</div>
+			);
 		}
 	}
 }
