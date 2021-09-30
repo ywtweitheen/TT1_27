@@ -17,6 +17,7 @@ class App extends Component {
           //switch to multiple paths
           <Route exact path="/" component={MainPage} />
           <Route path="/products" component={ProductsPage} />
+          <Route path="/cart" component={CartPage} />
         </Switch>
       </Router>);
 
