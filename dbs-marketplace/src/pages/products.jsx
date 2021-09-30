@@ -25,7 +25,8 @@ class Products extends Component {
 	}
 
 	componentDidMount() {
-		fetch('../products.json')
+		// fetch('../products.json')
+		fetch('http://localhost:5000/products')
 			// convert res to json
 			.then((res) => res.json())
 			.then((json) => {
