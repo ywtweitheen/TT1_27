@@ -14,6 +14,7 @@ const MainPage = () => {
 						<input type="text" placeholder="Username" name="username" />
 						<label> Enter Password </label>
 						<input type="password" placeholder="Password" password="password" />
+						<br></br>
 						<button onClick={logIn}>Log In</button>
 					</div>
 				</form>
@@ -21,7 +22,7 @@ const MainPage = () => {
 		</div>
 	);
 	function logIn(){
-		
+		alert("Log in Success")
 	}
 };
 
