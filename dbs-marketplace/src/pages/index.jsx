@@ -14,6 +14,7 @@ const MainPage = () => {
 						<input type="text" placeholder="Username" name="username" />
 						<label> Enter Password </label>
 						<input type="password" placeholder="Password" password="password" />
+						<button onClick={logIn}>Log In</button>
 					</div>
 				</form>
 			</container>
