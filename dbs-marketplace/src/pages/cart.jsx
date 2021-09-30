@@ -5,7 +5,10 @@ class Cart extends Component {
 	constructor(props) {
         super(props);
         this.listRef = React.createRef();
-      }
+    }
+    componentDidMount() {
+        
+    }
 
 }
 
