@@ -7,7 +7,12 @@ class Cart extends Component {
         this.listRef = React.createRef();
     }
     componentDidMount() {
-        
+
+    }
+    render(){
+        <div>
+            <h2>Your Cart</h2>
+        </div>
     }
 
 }
