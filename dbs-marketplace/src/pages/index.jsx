@@ -42,7 +42,13 @@ const MainPage = () => {
 						<label> Enter Password </label>
 						<input id="pwd" type="password" placeholder="Password" password="password"/>
 						<br></br>
+<<<<<<< HEAD
 						<button type = "submit" onClick = {logIn}>Login</button>
+=======
+						<button onClick={logIn}>Log In</button>
+						<br></br>
+						<input type = "reset" value="Reset"></input>
+>>>>>>> b4dbd21b2ec514760bf3353a44a59a1873345fe1
 					</div>
 				</form>
 			</div>

@@ -7,7 +7,15 @@ class Cart extends Component {
         this.listRef = React.createRef();
     }
     componentDidMount() {
-        
+
+    }
+    render(){
+        return(<div>
+            <h2>Your Cart</h2>
+            <br></br>
+            <button onClick={checkout}>Checkout</button>
+            
+        </div>)
     }
 
 }

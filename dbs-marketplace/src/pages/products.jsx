@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
+
+const [filter, setFilter] =  useState('All')
 class Products extends Component {
 	// step 1 : add constructor
 	constructor(props) {
