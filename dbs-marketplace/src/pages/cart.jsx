@@ -10,9 +10,9 @@ class Cart extends Component {
 
     }
     render(){
-        <div>
+        return(<div>
             <h2>Your Cart</h2>
-        </div>
+        </div>)
     }
 
 }
