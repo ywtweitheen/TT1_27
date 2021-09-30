@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
-const [filter, setFilter] =  useState('All')
+// const [filter, setFilter] =  useState('All')
 class Products extends Component {
 	// step 1 : add constructor
 	constructor(props) {
@@ -12,14 +12,14 @@ class Products extends Component {
 		this.state = {
 			//data to be fetched from API
 			items: [],
-			isLoaded: true,
+			isLoaded: false,
 			cartItems: []
 		};
 	}
 
 	componentDidMount() {
 		// fetch('../products.json')
-		fetch('http://localhost:8000/products')
+		fetch('http://localhost:8003/products')
 			// convert res to json
 			.then((res) => res.json())
 			.then((json) => {

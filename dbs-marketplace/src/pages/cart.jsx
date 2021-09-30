@@ -13,7 +13,7 @@ class Cart extends Component {
         return(<div>
             <h2>Your Cart</h2>
             <br></br>
-            <button onClick={checkout}>Checkout</button>
+            <button>Checkout</button>
             
         </div>)
     }

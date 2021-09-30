@@ -10,7 +10,7 @@ const MainPage = () => {
 
 
 	useEffect(() => {
-		fetch('http://localhost:8005/customers')
+		fetch('http://localhost:8003/customers')
 		.then(res => { 
 			return res.json();
 		})
@@ -42,13 +42,9 @@ const MainPage = () => {
 						<label> Enter Password </label>
 						<input id="pwd" type="password" placeholder="Password" password="password"/>
 						<br></br>
-<<<<<<< HEAD
-						<button type = "submit" onClick = {logIn}>Login</button>
-=======
-						<button onClick={logIn}>Log In</button>
-						<br></br>
-						<input type = "reset" value="Reset"></input>
->>>>>>> b4dbd21b2ec514760bf3353a44a59a1873345fe1
+						<Link to="/products">
+							<button type = "submit" >Login</button>
+						</Link>
 					</div>
 				</form>
 			</div>
@@ -57,9 +53,10 @@ const MainPage = () => {
 
 
 	function logIn(){
-		var username = document.getElementById("user").value;
-		var password = document.getElementById("password").value;
-		console.log(customers)
+		// var username = document.getElementById("user").value;
+		// var password = document.getElementById("password").value;
+		// console.log(customers)
+		<Link to="/products"></Link>
 		// for (var i = 0; i < customers.length; i++) {
 		// 	var customer = customers[i];
 		// 	if (customer.)
